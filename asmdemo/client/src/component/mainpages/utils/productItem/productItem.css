@@ -1,0 +1,83 @@
+.product_card{
+    max-width: 300px;
+    overflow: hidden;
+    height: 470px;
+    padding: 15px;
+    box-shadow: 0 0 15px #ddd;
+    margin: 10px 0;
+    position: relative;
+}
+.product_card img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+.product_box h3{
+    width: 100%;
+    height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #323232;
+}
+.product_card span{
+    color: rgb(7, 6, 6);
+}
+.product_box p{
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: #323232;
+}
+.row_btn{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.row_btn a{
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(7, 7, 7);
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 6px;
+}
+
+button {
+    width: 210px;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+button:after, button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #000;
+    transition: transform .2s;
+}
+button:after {
+    transform: translate(3px, 3px);
+}
+button:before {
+    transform: translate(-3px, -3px);
+}
+button:hover:after, button:hover:before {
+    transform: translate(0);
+}

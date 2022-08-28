@@ -1,0 +1,12 @@
+@import "react-slideshow-image/dist/styles.css";
+
+.slide-container img {
+    height: 500px;
+    width: auto;
+}
+.slide-container button{
+    display: none;
+}
+.slide-container{
+    padding: 20px 50px 0px 50px;
+}
